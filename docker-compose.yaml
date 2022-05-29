@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: node:latest
+    container_name: practice-three-js
+    stdin_open: true
+    tty: true
+    command: npm start
+    volumes:
+      - .:/root/project
+      - ~/.npmrc:/root/.npmrc
+    working_dir: /root/project
+    ports:
+      - 8080:8080

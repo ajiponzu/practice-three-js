@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! three */ \"./node_modules/three/build/three.module.js\");\n\nconst scene = new three__WEBPACK_IMPORTED_MODULE_0__.Scene();\n\n\n//# sourceURL=webpack://project/./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! three */ \"./node_modules/three/build/three.module.js\");\n\nconst scene = new three__WEBPACK_IMPORTED_MODULE_0__.Scene();\nconst camera = new three__WEBPACK_IMPORTED_MODULE_0__.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new three__WEBPACK_IMPORTED_MODULE_0__.WebGLRenderer({ alpha: true });\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\nrenderer.render(scene, camera);\n\n\n//# sourceURL=webpack://project/./src/index.ts?");
 
 /***/ }),
 
